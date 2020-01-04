@@ -29,16 +29,16 @@ public class Server {
     /**
      * Start the server
      *
-     * @param port
+     * @param port int
      */
     public static void start(final int port) {
         new Thread(startThreadLocalServer(port)).start();
     }
 
     /**
-     * Start the a local server for the integration tests
+     * Start the a local server for the br.com.produtec.integration tests
      *
-     * @param port
+     * @param port int
      */
     private static Runnable startThreadLocalServer(final int port) {
         return () -> {
@@ -57,7 +57,9 @@ public class Server {
         };
     }
 
-
+    /**
+     *  Stop de server
+     */
     public static void stop() {
         try {
             if (connection != null)
@@ -70,8 +72,8 @@ public class Server {
     }
 
     /**
-     * @param connection
-     * @return
+     * @param connection Socket
+     * @return Runnable
      */
     private static Runnable server(final Socket connection) {
         return () -> {

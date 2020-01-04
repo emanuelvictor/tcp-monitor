@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a95da92c-d6f0-4a96-9969-23aca50c08ab" name="Default Changelist" comment="" />
+    <list default="true" id="a95da92c-d6f0-4a96-9969-23aca50c08ab" name="Default Changelist" comment="Refactoring tests">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/desafio-produtec/META-INF/desafio-produtec.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/desafio-produtec/br/com/produtec/domain/entity/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/desafio-produtec/br/com/produtec/domain/entity/Service.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/desafio-produtec/integration/ExternalServiceIntegrationTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/desafio-produtec/integration/LocalServiceIntegrationTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/desafio-produtec/unit/ServiceUnitTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/produtec/infrastructure/suport/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/produtec/infrastructure/suport/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/integration/ExternalServiceIntegrationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/integration/LocalServiceIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/br/com/produtec/domain/entity/ServiceIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/unit/ServiceUnitTest.java" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,19 +26,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/integration/LocalServiceIntegrationTest.java">
+        <entry file="file://$PROJECT_DIR$/test/br/com/produtec/domain/entity/ServiceIntegrationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="12" column="7" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/integration/ExternalServiceIntegrationTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="25" />
+            <state relative-caret-position="170">
+              <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -40,14 +42,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/com/produtec/domain/entity/Service.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1081">
-              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+            <state relative-caret-position="986">
+              <caret line="69" selection-start-line="69" selection-end-line="69" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#521#522#0" expanded="true" />
-                <element signature="e#553#554#0" expanded="true" />
-                <element signature="e#820#821#0" expanded="true" />
-                <element signature="e#898#899#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,7 +54,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk-11.0.4/lib/src.zip!/java.base/java/net/InetSocketAddress.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
+            <state relative-caret-position="4437">
               <caret line="299" column="34" selection-start-line="299" selection-start-column="34" selection-end-line="299" selection-end-column="34" />
               <folding>
                 <element signature="e#4746#4747#0" expanded="true" />
@@ -69,7 +67,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk-11.0.4/lib/src.zip!/java.base/java/net/Socket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
+            <state relative-caret-position="6953">
               <caret line="442" selection-start-line="442" selection-end-line="442" />
               <folding>
                 <element signature="e#1875#1876#0" expanded="true" />
@@ -82,7 +80,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk-11.0.4/lib/src.zip!/java.base/java/net/InetAddress.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1008">
+            <state relative-caret-position="4913">
               <caret line="349" column="4" selection-start-line="349" selection-start-column="4" selection-end-line="349" selection-end-column="4" />
               <folding>
                 <element signature="e#12382#12383#0" expanded="true" />
@@ -92,17 +90,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/br/com/produtec/infrastructure/suport/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-483">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="476">
+              <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#280#281#0" expanded="true" />
-                <element signature="e#344#345#0" expanded="true" />
-                <element signature="e#536#537#0" expanded="true" />
-                <element signature="e#600#601#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -125,6 +119,9 @@
       <find>// TODO COLOCAR DESCRIÇÃO</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -136,11 +133,17 @@
         <option value="$PROJECT_DIR$/src/br/com/produtec/infrastructure/Server.java" />
         <option value="$PROJECT_DIR$/test/unit/ServiceUnitTest.java" />
         <option value="$PROJECT_DIR$/src/br/com/produtec/Application.java" />
-        <option value="$PROJECT_DIR$/src/br/com/produtec/infrastructure/suport/Server.java" />
         <option value="$PROJECT_DIR$/test/integration/ServiceIntegrationTest.java" />
+        <option value="$PROJECT_DIR$/src/br/com/produtec/domain/entity/Service.java" />
         <option value="$PROJECT_DIR$/test/integration/ExternalServiceIntegrationTest.java" />
         <option value="$PROJECT_DIR$/test/integration/LocalServiceIntegrationTest.java" />
-        <option value="$PROJECT_DIR$/src/br/com/produtec/domain/entity/Service.java" />
+        <option value="$PROJECT_DIR$/test/ApplicationTest.java" />
+        <option value="$PROJECT_DIR$/test/AbstractIntegrationTests.java" />
+        <option value="$PROJECT_DIR$/test/br/com/produtec/integration/ExternalServiceIntegrationTest.java" />
+        <option value="$PROJECT_DIR$/test/br/com/produtec/AbstractIntegrationTests.java" />
+        <option value="$PROJECT_DIR$/test/br/com/produtec/domain/entity/LocalServiceIntegrationTest.java" />
+        <option value="$PROJECT_DIR$/test/br/com/produtec/domain/entity/ServiceIntegrationTest.java" />
+        <option value="$PROJECT_DIR$/src/br/com/produtec/infrastructure/suport/Server.java" />
       </list>
     </option>
   </component>
@@ -150,57 +153,41 @@
     <option name="width" value="976" />
     <option name="height" value="1056" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="desafio-produtec" type="b2602c69:ProjectViewProjectNode" />
-              <item name="desafio-produtec" type="462c0819:PsiDirectoryNode" />
+              <item name="tcp-monitor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tcp-monitor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="desafio-produtec" type="b2602c69:ProjectViewProjectNode" />
-              <item name="desafio-produtec" type="462c0819:PsiDirectoryNode" />
+              <item name="tcp-monitor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tcp-monitor" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="desafio-produtec" type="b2602c69:ProjectViewProjectNode" />
-              <item name="desafio-produtec" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="produtec" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="desafio-produtec" type="b2602c69:ProjectViewProjectNode" />
-              <item name="desafio-produtec" type="462c0819:PsiDirectoryNode" />
+              <item name="tcp-monitor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tcp-monitor" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="produtec" type="462c0819:PsiDirectoryNode" />
-              <item name="suport" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="desafio-produtec" type="b2602c69:ProjectViewProjectNode" />
-              <item name="desafio-produtec" type="462c0819:PsiDirectoryNode" />
+              <item name="tcp-monitor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tcp-monitor" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="desafio-produtec" type="b2602c69:ProjectViewProjectNode" />
-              <item name="desafio-produtec" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="integration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="desafio-produtec" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -208,8 +195,10 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -221,7 +210,12 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="br.com.produtec.domain.entity" />
+      <recent name="br.com.produtec" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
       <recent name="integration" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -240,17 +234,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.br.com.produtec.domain.entity in desafio-produtec">
     <configuration name="ExternalServiceIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="desafio-produtec" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="integration.*" />
+          <option name="PATTERN" value="br.com.produtec.domain.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="integration" />
-      <option name="MAIN_CLASS_NAME" value="integration.ExternalServiceIntegrationTest" />
+      <option name="MAIN_CLASS_NAME" value="br.com.produtec.integration.ExternalServiceIntegrationTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -260,29 +254,13 @@
       <module name="desafio-produtec" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="integration.*" />
+          <option name="PATTERN" value="br.com.produtec.domain.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="integration" />
-      <option name="MAIN_CLASS_NAME" value="integration.ExternalServiceIntegrationTest" />
+      <option name="MAIN_CLASS_NAME" value="br.com.produtec.integration.ExternalServiceIntegrationTest" />
       <option name="METHOD_NAME" value="testIsConnectedWithExternalAddressMustFail" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExternalServiceIntegrationTest.testIsConnectedWithExternalAddressMustPass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="desafio-produtec" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="integration.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="integration" />
-      <option name="MAIN_CLASS_NAME" value="integration.ExternalServiceIntegrationTest" />
-      <option name="METHOD_NAME" value="testIsConnectedWithExternalAddressMustPass" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -292,47 +270,60 @@
       <module name="desafio-produtec" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="integration.*" />
+          <option name="PATTERN" value="br.com.produtec.domain.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="integration" />
-      <option name="MAIN_CLASS_NAME" value="integration.LocalServiceIntegrationTest" />
+      <option name="MAIN_CLASS_NAME" value="br.com.produtec.integration.LocalServiceIntegrationTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LocalServiceIntegrationTest.testIsConnectedWithVariousServersMustFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ServiceIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="desafio-produtec" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="integration.*" />
+          <option name="PATTERN" value="br.com.produtec.domain.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="integration" />
-      <option name="MAIN_CLASS_NAME" value="integration.LocalServiceIntegrationTest" />
-      <option name="METHOD_NAME" value="testIsConnectedWithVariousServersMustFail" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="br.com.produtec.domain.entity" />
+      <option name="MAIN_CLASS_NAME" value="br.com.produtec.domain.entity.ServiceIntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="br.com.produtec.domain.entity in desafio-produtec" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="desafio-produtec" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.produtec.domain.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.produtec.domain.entity" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="JUnit.LocalServiceIntegrationTest" />
-      <item itemvalue="JUnit.LocalServiceIntegrationTest.testIsConnectedWithVariousServersMustFail" />
-      <item itemvalue="JUnit.ExternalServiceIntegrationTest.testIsConnectedWithExternalAddressMustPass" />
       <item itemvalue="JUnit.ExternalServiceIntegrationTest.testIsConnectedWithExternalAddressMustFail" />
       <item itemvalue="JUnit.ExternalServiceIntegrationTest" />
+      <item itemvalue="JUnit.LocalServiceIntegrationTest (1)" />
+      <item itemvalue="JUnit.br.com.produtec.domain.entity in desafio-produtec" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.br.com.produtec.domain.entity in desafio-produtec" />
+        <item itemvalue="JUnit.LocalServiceIntegrationTest (1)" />
         <item itemvalue="JUnit.LocalServiceIntegrationTest" />
         <item itemvalue="JUnit.ExternalServiceIntegrationTest" />
         <item itemvalue="JUnit.ExternalServiceIntegrationTest.testIsConnectedWithExternalAddressMustFail" />
-        <item itemvalue="JUnit.ExternalServiceIntegrationTest.testIsConnectedWithExternalAddressMustPass" />
-        <item itemvalue="JUnit.LocalServiceIntegrationTest.testIsConnectedWithVariousServersMustFail" />
       </list>
     </recent_temporary>
   </component>
@@ -347,17 +338,12 @@
       <option name="presentableId" value="Default" />
       <updated>1578057291408</updated>
       <workItem from="1578057292960" duration="1680000" />
-      <workItem from="1578115341003" duration="7623000" />
+      <workItem from="1578115341003" duration="7776000" />
+      <workItem from="1578173728963" duration="786000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ExternalServiceIntegrationTest_testIsConnectedWithExternalAddressMustFail - 2020.01.04 at 05h 08m 59s.xml">
-      <configuration name="ExternalServiceIntegrationTest.testIsConnectedWithExternalAddressMustFail" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ExternalServiceIntegrationTest_testIsConnectedWithExternalAddressMustFail - 2020.01.04 at 05h 22m 53s.xml">
-      <configuration name="ExternalServiceIntegrationTest.testIsConnectedWithExternalAddressMustFail" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ExternalServiceIntegrationTest_testIsConnectedWithExternalAddressMustFail - 2020.01.04 at 05h 23m 43s.xml">
       <configuration name="ExternalServiceIntegrationTest.testIsConnectedWithExternalAddressMustFail" configurationId="JUnit" />
     </history-entry>
@@ -382,9 +368,15 @@
     <history-entry file="LocalServiceIntegrationTest - 2020.01.04 at 05h 26m 38s.xml">
       <configuration name="LocalServiceIntegrationTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LocalServiceIntegrationTest_(1) - 2020.01.04 at 19h 43m 40s.xml">
+      <configuration name="LocalServiceIntegrationTest (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="br_com_produtec_domain_entity_in_desafio-produtec - 2020.01.04 at 19h 47m 16s.xml">
+      <configuration name="br.com.produtec.domain.entity in desafio-produtec" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9303000" />
+    <option name="totallyTimeSpent" value="10242000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -399,7 +391,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -408,8 +400,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -417,7 +409,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -433,6 +425,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Refactoring tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -462,14 +458,7 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test/unit.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/produtec/infrastructure.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="57" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/produtec/infrastructure.fxml" />
     <entry file="jar://$PROJECT_DIR$/lib/junit-4.12.jar!/org/junit/Before.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -488,13 +477,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/ServiceUnitTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -519,20 +501,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.4/lib/src.zip!/java.base/java/net/Socket.java">
+    <entry file="jar://$USER_HOME$/.ideaLibSources/junit-4.12-sources.jar!/org/junit/runners/MethodSorters.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/produtec/domain/entity/Service.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="442" selection-start-line="442" selection-end-line="442" />
+        <state relative-caret-position="986">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
           <folding>
-            <element signature="e#1875#1876#0" expanded="true" />
-            <element signature="e#1900#1901#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11.0.4/lib/src.zip!/java.base/java/net/InetSocketAddress.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
+        <state relative-caret-position="4437">
           <caret line="299" column="34" selection-start-line="299" selection-start-column="34" selection-end-line="299" selection-end-column="34" />
           <folding>
             <element signature="e#4746#4747#0" expanded="true" />
@@ -541,12 +525,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.ideaLibSources/junit-4.12-sources.jar!/org/junit/runners/MethodSorters.java">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.4/lib/src.zip!/java.base/java/net/Socket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6953">
+          <caret line="442" selection-start-line="442" selection-end-line="442" />
+          <folding>
+            <element signature="e#1875#1876#0" expanded="true" />
+            <element signature="e#1900#1901#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11.0.4/lib/src.zip!/java.base/java/net/InetAddress.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1008">
+        <state relative-caret-position="4913">
           <caret line="349" column="4" selection-start-line="349" selection-start-column="4" selection-end-line="349" selection-end-column="4" />
           <folding>
             <element signature="e#12382#12383#0" expanded="true" />
@@ -555,45 +547,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/integration/LocalServiceIntegrationTest.java">
+    <entry file="file://$PROJECT_DIR$/test/ApplicationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="7" />
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/produtec/domain/entity/Service.java">
+    <entry file="file://$PROJECT_DIR$/test/br/com/produtec/AbstractITests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1081">
-          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#820#821#0" expanded="true" />
-            <element signature="e#898#899#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/br/com/produtec/unit/ServiceUnitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/br/com/produtec/domain/entity/ExternalServiceIntegrationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="32" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/br/com/produtec/domain/entity/ServiceIntegrationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/produtec/infrastructure/suport/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-483">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="476">
+          <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/integration/ExternalServiceIntegrationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="25" />
         </state>
       </provider>
     </entry>

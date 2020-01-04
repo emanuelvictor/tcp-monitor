@@ -1,6 +1,5 @@
-package integration;
+package br.com.produtec.domain.entity;
 
-import br.com.produtec.domain.entity.Service;
 import br.com.produtec.infrastructure.suport.Server;
 import org.junit.Assert;
 import org.junit.Before;
@@ -10,9 +9,9 @@ import org.junit.runners.MethodSorters;
 
 import java.io.IOException;
 
-// TODO COLOCAR DESCRIÇÃO
+// Test the external services (external IP's)
 @FixMethodOrder(MethodSorters.NAME_ASCENDING) // Define the order to running tests.
-public class LocalServiceIntegrationTest {
+public class ServiceIntegrationTest {
 
     /**
      * Running away before the testes
@@ -20,7 +19,7 @@ public class LocalServiceIntegrationTest {
     @Before
     public void before() {
 
-        // Start the server to execute the integration testes
+        // Start the server to execute the br.com.produtec.integration testes
         Server.start();
     }
 
@@ -86,5 +85,26 @@ public class LocalServiceIntegrationTest {
         final Service service4003 = new Service(4003);
         service4003.connect();
         Assert.assertTrue(service4003.isConnected());
+    }
+
+    /**
+     *
+     */
+    @Test
+    public void testIsConnectedWithExternalAddressMustPass() throws IOException {
+        Server.stop();
+        final Service service = new Service("8.8.8.8", 443);
+        service.connect();
+        Assert.assertTrue(service.isConnected());
+    }
+
+    /**
+     *
+     */
+    @Test(expected = java.net.SocketTimeoutException.class)
+    public void testIsConnectedWithExternalAddressMustFail() throws IOException {
+        Server.stop();
+        final Service service = new Service("8.8.8.253", 443);
+        service.connect();
     }
 }
