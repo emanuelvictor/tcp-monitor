@@ -10,7 +10,7 @@ import java.net.SocketAddress;
 import static br.com.produtec.Application.DEFAULT_HOST;
 import static br.com.produtec.Application.DEFAULT_PORT;
 
-public class Service implements Observer {
+public class Service implements Runnable, Observer {
 
     /**
      *
@@ -47,10 +47,13 @@ public class Service implements Observer {
      */
     private Socket connection;
 
+    Thread thread;
+
     /**
      *
      */
     Service() {
+        thread = new Thread(this, host + ":" + port);
     }
 
     /**
@@ -58,6 +61,7 @@ public class Service implements Observer {
      */
     Service(final int port) {
         this.port = port;
+        thread = new Thread(this, host + ":" + port);
     }
 
     /**
@@ -67,7 +71,14 @@ public class Service implements Observer {
     Service(final String host, final int port) {
         this.port = port;
         this.host = host;
-//        thread(this).run();
+        thread = new Thread(this, host + ":" + port);
+    }
+
+    /**
+     *
+     */
+    void start(){
+        thread.start();
     }
 
     /**
@@ -113,37 +124,23 @@ public class Service implements Observer {
 //        this.observable.receiveNotification(notification); TODO
     }
 
-    /**
-     * Verify connection
-     *
-     * @return Runnable
-     */
-    private static Thread thread(final Service service) {
-
-
-        return new Thread(() -> {
+    public void run() {
+        try {
             while (true) {
 
-                service.connect();
+                connect();
 
-                if (service.connected == null || service.connected != service.isConnected()) {
-                    service.connected = service.isConnected();
-                    service.sendNotification(service.connected ? service.host + ":" + service.port + " connected" : service.host + ":" + service.port + " not connected");
+                if (connected == null || connected != isConnected()) {
+                    connected = isConnected();
+                    sendNotification(connected ? host + ":" + port + " connected" : host + ":" + port + " not connected");
                 }
 
-                // Handler de timeToNextConnection para próxima verificação
-                try {
-                    Thread.sleep(service.timeToNextConnection);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+                Thread.sleep(1000);
             }
-        });
-
+        } catch (InterruptedException e) {
+            System.out.println(host + ":" + port + " Interrupted");
+        }
+        System.out.println(host + ":" + port + " exiting.");
     }
-
-//    CompletableFuture.delayedExecutor(5, TimeUnit.SECONDS).execute(() -> {
-//        // Your code here executes after 5 seconds!
-//    });
 
 }
