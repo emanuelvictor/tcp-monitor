@@ -65,12 +65,12 @@ public class Service implements Runnable, Observer {
     /**
      * @param host
      * @param port
-     * @param caller
+     * @param monitor
      */
-    Service(final String host, final int port, final Caller caller) {
+    public Service(final String host, final int port, final Monitor monitor) {
         this.port = port;
         this.host = host;
-        this.observable = caller;
+        this.observable = monitor;
 
         thread = new Thread(this, host + ":" + port);
     }
@@ -78,16 +78,16 @@ public class Service implements Runnable, Observer {
     /**
      * @param host
      * @param port
-     * @param caller
+     * @param monitor
      * @param pollingTimeout
      * @param connectionTimeout
      * @param initialDateTime
      * @param finalDateTime
      */
-    Service(final String host, final int port, final Caller caller, final long pollingTimeout, final long connectionTimeout, final LocalDateTime initialDateTime, final LocalDateTime finalDateTime) {
+    public Service(final String host, final int port, final Monitor monitor, final long pollingTimeout, final long connectionTimeout, final LocalDateTime initialDateTime, final LocalDateTime finalDateTime) {
         this.port = port;
         this.host = host;
-        this.observable = caller;
+        this.observable = monitor;
 
         this.pollingTimeout = pollingTimeout;
         this.connectionTimeout = connectionTimeout;
@@ -100,7 +100,7 @@ public class Service implements Runnable, Observer {
     /**
      *
      */
-    void start() {
+    public void start() {
         thread.start();
     }
 
