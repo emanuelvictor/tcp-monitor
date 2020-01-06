@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-import static br.com.produtec.Application.DEFAULT_PORT;
 
 
 public class Server {
@@ -23,7 +22,8 @@ public class Server {
      * Start the server
      */
     public static void start() {
-        new Thread(startThreadLocalServer(DEFAULT_PORT)).start();
+        // DEFAULT PORT = 4000;
+        new Thread(startThreadLocalServer(4000)).start();
     }
 
     /**
@@ -47,12 +47,11 @@ public class Server {
                 server = new ServerSocket(port);
 
                 // Waiting for new connection
-                System.out.println("Waiting for new connection ");
                 connection = server.accept();
-                new Thread(server(connection)).start();
 
-            } catch (IOException e) {
-                e.printStackTrace();
+                stop();
+
+            } catch (IOException ignored) {
             }
         };
     }
@@ -69,27 +68,6 @@ public class Server {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
-
-    /**
-     * @param connection Socket
-     * @return Runnable
-     */
-    private static Runnable server(final Socket connection) {
-        return () -> {
-//            // Receive data
-//            try {
-
-            System.out.println("Conection accepted in port: " + connection.getPort());
-
-            stop();
-//                // CLose the connection
-//                connection.close();
-
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-        };
     }
 
 }

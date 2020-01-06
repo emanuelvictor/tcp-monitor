@@ -7,8 +7,6 @@ import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.net.SocketAddress;
 
-import static br.com.produtec.Application.DEFAULT_HOST;
-import static br.com.produtec.Application.DEFAULT_PORT;
 
 public class Service implements Runnable, Observer {
 
@@ -20,12 +18,12 @@ public class Service implements Runnable, Observer {
     /**
      *
      */
-    public long timeToNextConnection = 1000;
+    private long pollingTimeout = 1000;
 
     /**
      *
      */
-    public Boolean connected;
+    private Boolean connected;
 
     /**
      *
@@ -35,49 +33,40 @@ public class Service implements Runnable, Observer {
     /**
      * Port of service
      */
-    public int port = DEFAULT_PORT;
+    private int port;
 
     /**
      * IP Address of port
      */
-    public String host = DEFAULT_HOST;
+    private String host;
 
     /**
      * Connection
      */
     private Socket connection;
 
-    Thread thread;
-
     /**
      *
      */
-    Service() {
-        thread = new Thread(this, host + ":" + port);
-    }
-
-    /**
-     * @param port
-     */
-    Service(final int port) {
-        this.port = port;
-        thread = new Thread(this, host + ":" + port);
-    }
+    private Thread thread;
 
     /**
      * @param port
      * @param host
      */
-    Service(final String host, final int port) {
+    Service(final String host, final int port, final long pollingTimeout, final long connectionTimeout, final Caller caller) {
         this.port = port;
         this.host = host;
+        this.pollingTimeout = pollingTimeout;
+        this.connectionTimeout = connectionTimeout;
+        this.observable = caller;
         thread = new Thread(this, host + ":" + port);
     }
 
     /**
      *
      */
-    void start(){
+    void start() {
         thread.start();
     }
 
@@ -85,12 +74,17 @@ public class Service implements Runnable, Observer {
      *
      */
     void connect() {
-        final SocketAddress endPoint = new InetSocketAddress(this.host != null ? this.host : DEFAULT_HOST, this.port);
+        final SocketAddress endPoint = new InetSocketAddress(this.host, this.port);
         final Socket socket = new Socket();
         try {
+            if (this.connection != null && this.connection.isConnected()) {
+                this.connection.close();
+            }
+
             socket.connect(endPoint, (int) this.connectionTimeout);
 
             this.connection = socket;
+
             // Se não conectar, encerra a conexão
             // Handler para qualquer exceção
         } catch (final Exception e) {
@@ -120,10 +114,12 @@ public class Service implements Runnable, Observer {
      */
     @Override
     public void sendNotification(final String notification) {
-        System.out.println(notification);
-//        this.observable.receiveNotification(notification); TODO
+        this.observable.receiveNotification(notification);
     }
 
+    /**
+     *
+     */
     public void run() {
         try {
             while (true) {
@@ -135,7 +131,7 @@ public class Service implements Runnable, Observer {
                     sendNotification(connected ? host + ":" + port + " connected" : host + ":" + port + " not connected");
                 }
 
-                Thread.sleep(1000);
+                Thread.sleep(this.pollingTimeout);
             }
         } catch (InterruptedException e) {
             System.out.println(host + ":" + port + " Interrupted");
