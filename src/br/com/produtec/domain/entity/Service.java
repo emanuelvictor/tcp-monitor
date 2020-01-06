@@ -6,9 +6,20 @@ import br.com.produtec.infrastructure.observer.Observer;
 import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.net.SocketAddress;
+import java.time.LocalDateTime;
 
 
 public class Service implements Runnable, Observer {
+
+    /**
+     *
+     */
+    private LocalDateTime initialDateTime;
+
+    /**
+     *
+     */
+    private LocalDateTime finalDateTime;
 
     /**
      *
@@ -50,16 +61,39 @@ public class Service implements Runnable, Observer {
      */
     private Thread thread;
 
+
     /**
-     * @param port
      * @param host
+     * @param port
+     * @param caller
      */
-    Service(final String host, final int port, final long pollingTimeout, final long connectionTimeout, final Caller caller) {
+    Service(final String host, final int port, final Caller caller) {
         this.port = port;
         this.host = host;
+        this.observable = caller;
+
+        thread = new Thread(this, host + ":" + port);
+    }
+
+    /**
+     * @param host
+     * @param port
+     * @param caller
+     * @param pollingTimeout
+     * @param connectionTimeout
+     * @param initialDateTime
+     * @param finalDateTime
+     */
+    Service(final String host, final int port, final Caller caller, final long pollingTimeout, final long connectionTimeout, final LocalDateTime initialDateTime, final LocalDateTime finalDateTime) {
+        this.port = port;
+        this.host = host;
+        this.observable = caller;
+
         this.pollingTimeout = pollingTimeout;
         this.connectionTimeout = connectionTimeout;
-        this.observable = caller;
+        this.initialDateTime = initialDateTime;
+        this.finalDateTime = finalDateTime;
+
         thread = new Thread(this, host + ":" + port);
     }
 
