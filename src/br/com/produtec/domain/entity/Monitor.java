@@ -4,6 +4,4 @@ public class Monitor {
 
     private long timeout;
 
-
-
 }

@@ -1,4 +1,4 @@
-package br.com.produtec.infrastructure.suport;
+package br.com.produtec.infrastructure.utils;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -58,7 +58,7 @@ public class Server {
     }
 
     /**
-     *  Stop de server
+     * Stop de server
      */
     public static void stop() {
         try {
@@ -77,17 +77,18 @@ public class Server {
      */
     private static Runnable server(final Socket connection) {
         return () -> {
-            // Receive data
-            try {
+//            // Receive data
+//            try {
 
-                System.out.println("Conection accepted in port: " + connection.getPort());
+            System.out.println("Conection accepted in port: " + connection.getPort());
 
-                // CLose the connection
-                connection.close();
+            stop();
+//                // CLose the connection
+//                connection.close();
 
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
         };
     }
 
