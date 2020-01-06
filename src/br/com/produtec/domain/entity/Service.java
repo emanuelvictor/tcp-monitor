@@ -114,7 +114,8 @@ public class Service implements Runnable, Observer {
      */
     @Override
     public void sendNotification(final String notification) {
-        this.observable.receiveNotification(notification);
+        if (this.observable != null)
+            this.observable.receiveNotification(notification);
     }
 
     /**
@@ -122,7 +123,7 @@ public class Service implements Runnable, Observer {
      */
     public void run() {
         try {
-            while (true) {
+            while (true) { // mater while todo
 
                 connect();
 
