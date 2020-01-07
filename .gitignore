@@ -1,34 +1,11 @@
 i# See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
-/front-end/dist/**
-/front-end/deploy
-/front-end/tmp
 /.idea/**
-/back-end/src/main/resources/public/sistema
-/back-end/src/main/resources/public/public
 # dependencies
-/back-end/log
-/front-end/node_modules
-/front-end/functions/node_modules
-/bower_components
 
-# Mobile
-/mobile-cordova/node_modules
-/mobile-cordova/platforms
-/mobile-cordova/res
-/mobile-cordova/package-lock.json
-/mobile-cordova/plugins
-/mobile-cordova/www
-
-# IDEs and editors
-/front-end/.idea
-/back-end/.idea
-/back-end/back-end.iml
-/back-end/target/**
-/back-end/assessment-online.iml
+/out/**
 /.vscode
-/front-end/package-lock.json
 
 # misc
 /.sass-cache
