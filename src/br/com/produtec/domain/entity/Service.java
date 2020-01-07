@@ -243,8 +243,10 @@ public class Service implements Runnable, Observer {
 
                 if (((initialDateTime == null) || now.isAfter(initialDateTime)) && (finalDateTime == null || finalDateTime.isAfter(now)))
                     done = false;
-                else
+                else{
                     stop();
+                    sendNotification(this);
+                }
 
                 Thread.sleep(this.pollingTimeout);
             }
@@ -278,6 +280,6 @@ public class Service implements Runnable, Observer {
 
     @Override
     public String toString() {
-        return host + ":" + port + (connected ? " up" : " down");
+        return host + ":" + port + (done != null && !done ? (connected ? " up" : " down") : " done");
     }
 }

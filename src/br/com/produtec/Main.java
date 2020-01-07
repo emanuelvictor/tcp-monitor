@@ -34,9 +34,11 @@ public class Main {
 
 
         final Monitor monitor3 = new Monitor("Monitor 3");
-        final Service service8 = new Service("186.237.59.102", 443, monitor3);
+        final Service service8 = new Service("186.237.59.102", 443, monitor3, 30, 30, LocalDateTime.now(), LocalDateTime.now().plusMinutes(2));
         service8.start();
-        final Service service10 = new Service("151.101.65.195", 443, monitor3);
+        final Service service9 = new Service("8.2.3.4", 443, monitor3, 30, 30, LocalDateTime.now(), LocalDateTime.now().plusMinutes(2));
+        service9.start();
+        final Service service10 = new Service("151.101.65.195", 443, monitor3, 30, 30, LocalDateTime.now(), LocalDateTime.now().plusMinutes(2));
         service10.start();
     }
 }
