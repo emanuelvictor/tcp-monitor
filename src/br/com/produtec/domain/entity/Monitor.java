@@ -20,6 +20,9 @@ public class Monitor implements Observable {
      */
     private JFrame jFrame = new JFrame();
 
+    /**
+     *
+     */
     private JPanel jPanel = new JPanel();
 
     /**
@@ -30,13 +33,11 @@ public class Monitor implements Observable {
     /**
      *
      */
-    private String title = "monitor";
-
-    /**
-     *
-     */
-    public Monitor() {
+    public Monitor(final String title) {
+        jFrame.setTitle(title);
         jFrame.setLocationRelativeTo(null);
+
+        this.inflate();
     }
 
     /**
@@ -46,25 +47,33 @@ public class Monitor implements Observable {
     public void receiveNotification(final Observer notification) {
 
         services.add(notification);
+
         final Service[] myArray = new Service[this.services.size()];
         services.toArray(myArray);
         jList.setListData(myArray);
+        jList.setPreferredSize(new Dimension(250, 250));
+    }
 
-        jFrame.pack();
-        jFrame.setTitle(title);
+    public void inflate(){
+        final Service[] myArray = new Service[this.services.size()];
+        services.toArray(myArray);
+        jList.setListData(myArray);
+        jList.setPreferredSize(new Dimension(250, 250));
 
-        jFrame.getContentPane();
-
-        if (jFrame.getContentPane().getComponents().length == 0){
+        if (jPanel.getComponents() == null || jFrame.getContentPane().getComponents().length == 0) {
             jPanel = new JPanel();
             jPanel.setPreferredSize(new Dimension(250, 250));
             jPanel.add(jList);
             jFrame.getContentPane().add(jPanel);
-        }
-        else
+        } else if (jPanel.getComponents() != null && jPanel.getComponents().length > 0)
             jPanel.getComponents()[0] = jList;
 
+        jFrame.setLocationRelativeTo(null);
+
+        jFrame.pack();
         jFrame.setVisible(true);
 
+        jFrame.setPreferredSize(new Dimension(250, 250));
+        jFrame.setVisible(true);
     }
 }

@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="a95da92c-d6f0-4a96-9969-23aca50c08ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/desafio-produtec/br/com/produtec/domain/entity/Monitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/desafio-produtec/br/com/produtec/domain/entity/Service.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/produtec/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/produtec/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/produtec/domain/entity/Monitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/produtec/domain/entity/Monitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/produtec/domain/entity/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/produtec/domain/entity/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/br/com/produtec/domain/entity/ServiceIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/br/com/produtec/domain/entity/ServiceIntegrationTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/br/com/produtec/domain/entity/ServiceIntegrationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="47" column="7" selection-start-line="47" selection-end-line="48" />
+            <state relative-caret-position="-2710">
+              <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -32,104 +37,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/com/produtec/domain/entity/Service.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="197" column="82" selection-start-line="197" selection-start-column="82" selection-end-line="197" selection-end-column="82" />
+            <state relative-caret-position="168">
+              <caret line="117" column="11" selection-start-line="117" selection-start-column="11" selection-end-line="117" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2054#2055#0" expanded="true" />
                 <element signature="e#2084#2085#0" expanded="true" />
-                <element signature="e#2850#2851#0" expanded="true" />
-                <element signature="e#2929#2930#0" expanded="true" />
-                <element signature="e#3043#3044#0" expanded="true" />
-                <element signature="e#3087#3088#0" expanded="true" />
-                <element signature="e#4843#4844#0" expanded="true" />
-                <element signature="e#4915#4916#0" expanded="true" />
+                <element signature="e#4697#4698#0" expanded="true" />
+                <element signature="e#4805#4806#0" expanded="true" />
+                <element signature="e#4963#4964#0" expanded="true" />
+                <element signature="e#6942#6943#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/com/produtec/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/br/com/produtec/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/br/com/produtec/domain/entity/Monitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="46" column="21" lean-forward="true" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+            <state relative-caret-position="350">
+              <caret line="68" column="42" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1440#4190#0" expanded="true" />
-                <element signature="e#4189#4190#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-11.0.4/lib/src.zip!/java.desktop/javax/swing/text/MaskFormatter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="212" column="24" selection-start-line="212" selection-start-column="11" selection-end-line="212" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-11.0.4/lib/src.zip!/java.desktop/java/awt/TextField.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2091">
-              <caret line="152" column="11" selection-start-line="152" selection-start-column="11" selection-end-line="152" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-11.0.4/lib/src.zip!/java.desktop/javax/swing/JRootPane.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="346" column="11" selection-start-line="346" selection-start-column="11" selection-end-line="346" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-11.0.4/lib/src.zip!/java.desktop/javax/swing/JLayeredPane.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1346">
-              <caret line="194" column="11" selection-start-line="194" selection-start-column="11" selection-end-line="194" selection-end-column="11" />
-              <folding>
-                <element signature="e#8197#8198#0" expanded="true" />
-                <element signature="e#8228#8229#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-11.0.4/lib/src.zip!/java.desktop/javax/swing/JFrame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="704" column="43" selection-start-line="704" selection-start-column="31" selection-end-line="704" selection-end-column="43" />
-              <folding>
-                <element signature="e#25207#25208#0" expanded="true" />
-                <element signature="e#25264#25265#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-11.0.4/lib/src.zip!/java.desktop/javax/swing/LayoutStyle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="132" column="11" selection-start-line="132" selection-start-column="11" selection-end-line="132" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/com/produtec/infrastructure/observer/Observable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -152,11 +94,14 @@
       <find>service.</find>
       <find>textFieldPort</find>
       <find>TextField</find>
+      <find>exiting</find>
+      <find>Port</find>
     </findStrings>
     <replaceStrings>
       <replace>service2.</replace>
       <replace>textFieldDateTimeFinal</replace>
       <replace>JTextField</replace>
+      <replace>ConnectionTimeout</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -184,7 +129,6 @@
         <option value="$PROJECT_DIR$/src/br/com/produtec/infrastructure/observer/Main.java" />
         <option value="$PROJECT_DIR$/src/br/com/produtec/domain/entity/Caller.java" />
         <option value="$PROJECT_DIR$/src/br/com/produtec/infrastructure/utils/Server.java" />
-        <option value="$PROJECT_DIR$/test/br/com/produtec/domain/entity/ServiceIntegrationTest.java" />
         <option value="$PROJECT_DIR$/src/br/com/produtec/Application.java" />
         <option value="$PROJECT_DIR$/src/br/com/produtec/domain/entity/Monitorr.java" />
         <option value="$PROJECT_DIR$/src/br/com/produtec/infrastructure/observer/Message.java" />
@@ -193,9 +137,10 @@
         <option value="$PROJECT_DIR$/src/br/com/produtec/infrastructure/observer/ObserverImpl.java" />
         <option value="$PROJECT_DIR$/src/br/com/produtec/infrastructure/observer/ObservableImpl.java" />
         <option value="$PROJECT_DIR$/src/br/com/produtec/infrastructure/observer/ObserverObservableImpl.java" />
-        <option value="$PROJECT_DIR$/src/br/com/produtec/domain/entity/Monitor.java" />
+        <option value="$PROJECT_DIR$/test/br/com/produtec/domain/entity/ServiceIntegrationTest.java" />
         <option value="$PROJECT_DIR$/src/br/com/produtec/domain/entity/Service.java" />
         <option value="$PROJECT_DIR$/src/br/com/produtec/Main.java" />
+        <option value="$PROJECT_DIR$/src/br/com/produtec/domain/entity/Monitor.java" />
       </list>
     </option>
   </component>
@@ -342,32 +287,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Monitor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.produtec.domain.entity.Monitor" />
-      <module name="desafio-produtec" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.produtec.domain.entity.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ServiceIntegrationTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.produtec.domain.entity.ServiceIntegrationTest" />
-      <module name="desafio-produtec" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.produtec.domain.entity.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ServiceIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="desafio-produtec" />
       <extension name="coverage">
@@ -383,7 +302,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceIntegrationTest.testIsConnectedMustReturnTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ServiceIntegrationTest.testIsConnectedWithExternalAddressInfinityThreadMustPass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="desafio-produtec" />
       <extension name="coverage">
         <pattern>
@@ -393,26 +312,58 @@
       </extension>
       <option name="PACKAGE_NAME" value="br.com.produtec.domain.entity" />
       <option name="MAIN_CLASS_NAME" value="br.com.produtec.domain.entity.ServiceIntegrationTest" />
-      <option name="METHOD_NAME" value="testIsConnectedMustReturnTrue" />
+      <option name="METHOD_NAME" value="testIsConnectedWithExternalAddressInfinityThreadMustPass" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceIntegrationTest.testWithInvalidDatesMustFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="desafio-produtec" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.produtec.domain.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.produtec.domain.entity" />
+      <option name="MAIN_CLASS_NAME" value="br.com.produtec.domain.entity.ServiceIntegrationTest" />
+      <option name="METHOD_NAME" value="testWithInvalidDatesMustFail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceIntegrationTest.testWithInvalidTimeoutsMustFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="desafio-produtec" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.produtec.domain.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.produtec.domain.entity" />
+      <option name="MAIN_CLASS_NAME" value="br.com.produtec.domain.entity.ServiceIntegrationTest" />
+      <option name="METHOD_NAME" value="testWithInvalidTimeoutsMustFail" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ServiceIntegrationTest" />
       <item itemvalue="JUnit.ServiceIntegrationTest" />
-      <item itemvalue="JUnit.ServiceIntegrationTest.testIsConnectedMustReturnTrue" />
-      <item itemvalue="Application.Monitorr" />
+      <item itemvalue="JUnit.ServiceIntegrationTest.testIsConnectedWithExternalAddressInfinityThreadMustPass" />
+      <item itemvalue="JUnit.ServiceIntegrationTest.testWithInvalidDatesMustFail" />
+      <item itemvalue="JUnit.ServiceIntegrationTest.testWithInvalidTimeoutsMustFail" />
       <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Monitorr" />
         <item itemvalue="JUnit.ServiceIntegrationTest" />
-        <item itemvalue="JUnit.ServiceIntegrationTest.testIsConnectedMustReturnTrue" />
-        <item itemvalue="Application.ServiceIntegrationTest" />
+        <item itemvalue="JUnit.ServiceIntegrationTest.testWithInvalidTimeoutsMustFail" />
+        <item itemvalue="JUnit.ServiceIntegrationTest.testWithInvalidDatesMustFail" />
+        <item itemvalue="JUnit.ServiceIntegrationTest.testIsConnectedWithExternalAddressInfinityThreadMustPass" />
       </list>
     </recent_temporary>
   </component>
@@ -433,7 +384,7 @@
       <workItem from="1578206971908" duration="6091000" />
       <workItem from="1578246231076" duration="1768000" />
       <workItem from="1578250429164" duration="2187000" />
-      <workItem from="1578311976544" duration="32766000" />
+      <workItem from="1578311976544" duration="41476000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring tests">
       <created>1578174562077</created>
@@ -498,43 +449,50 @@
       <option name="project" value="LOCAL" />
       <updated>1578375024070</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Refactoring tests">
+      <created>1578397833892</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1578397833892</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ServiceIntegrationTest - 2020.01.06 at 11h 04m 56s.xml">
+    <history-entry file="ServiceIntegrationTest_testIsConnectedWithExternalAddressInfinityThreadMustPass - 2020.01.07 at 10h 36m 09s.xml">
+      <configuration name="ServiceIntegrationTest.testIsConnectedWithExternalAddressInfinityThreadMustPass" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceIntegrationTest_testIsConnectedWithExternalAddressInfinityThreadMustPass - 2020.01.07 at 10h 37m 14s.xml">
+      <configuration name="ServiceIntegrationTest.testIsConnectedWithExternalAddressInfinityThreadMustPass" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceIntegrationTest - 2020.01.07 at 10h 37m 57s.xml">
       <configuration name="ServiceIntegrationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServiceIntegrationTest - 2020.01.06 at 14h 19m 14s.xml">
+    <history-entry file="ServiceIntegrationTest - 2020.01.07 at 10h 39m 49s.xml">
       <configuration name="ServiceIntegrationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServiceIntegrationTest - 2020.01.06 at 14h 20m 14s.xml">
+    <history-entry file="ServiceIntegrationTest - 2020.01.07 at 10h 48m 50s.xml">
       <configuration name="ServiceIntegrationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServiceIntegrationTest - 2020.01.06 at 14h 21m 02s.xml">
+    <history-entry file="ServiceIntegrationTest - 2020.01.07 at 10h 55m 23s.xml">
       <configuration name="ServiceIntegrationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServiceIntegrationTest_testIsConnectedMustReturnTrue - 2020.01.06 at 14h 21m 15s.xml">
-      <configuration name="ServiceIntegrationTest.testIsConnectedMustReturnTrue" configurationId="JUnit" />
+    <history-entry file="ServiceIntegrationTest_testWithInvalidDatesMustFail - 2020.01.07 at 10h 57m 34s.xml">
+      <configuration name="ServiceIntegrationTest.testWithInvalidDatesMustFail" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServiceIntegrationTest - 2020.01.06 at 14h 23m 40s.xml">
-      <configuration name="ServiceIntegrationTest" configurationId="JUnit" />
+    <history-entry file="ServiceIntegrationTest_testWithInvalidTimeoutsMustFail - 2020.01.07 at 10h 58m 08s.xml">
+      <configuration name="ServiceIntegrationTest.testWithInvalidTimeoutsMustFail" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServiceIntegrationTest - 2020.01.06 at 14h 25m 01s.xml">
-      <configuration name="ServiceIntegrationTest" configurationId="JUnit" />
+    <history-entry file="ServiceIntegrationTest_testWithInvalidTimeoutsMustFail - 2020.01.07 at 10h 58m 30s.xml">
+      <configuration name="ServiceIntegrationTest.testWithInvalidTimeoutsMustFail" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServiceIntegrationTest - 2020.01.06 at 14h 25m 09s.xml">
-      <configuration name="ServiceIntegrationTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ServiceIntegrationTest - 2020.01.06 at 17h 22m 13s.xml">
-      <configuration name="ServiceIntegrationTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ServiceIntegrationTest - 2020.01.06 at 17h 25m 26s.xml">
+    <history-entry file="ServiceIntegrationTest - 2020.01.07 at 10h 59m 15s.xml">
       <configuration name="ServiceIntegrationTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66727000" />
+    <option name="totallyTimeSpent" value="75437000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -547,9 +505,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26599148" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26599148" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -559,7 +516,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -569,7 +526,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -616,6 +573,16 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactoring tests" />
     <option name="LAST_COMMIT_MESSAGE" value="Refactoring tests" />
@@ -628,6 +595,12 @@
           <line>212</line>
           <properties />
           <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/com/produtec/domain/entity/Monitor.java</url>
+          <line>63</line>
+          <properties />
+          <option name="timeStamp" value="138" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -737,17 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.4/lib/src.zip!/java.base/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12342">
-          <caret line="784" column="29" selection-start-line="784" selection-start-column="29" selection-end-line="784" selection-end-column="29" />
-          <folding>
-            <element signature="e#17047#17048#0" expanded="true" />
-            <element signature="e#17113#17114#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11.0.4/lib/src.zip!/java.base/java/net/Socket.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2992">
@@ -793,8 +755,6 @@
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#667#668#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -821,13 +781,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/produtec/infrastructure/observer/Observable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -877,16 +830,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/br/com/produtec/domain/entity/ServiceIntegrationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="47" column="7" selection-start-line="47" selection-end-line="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11.0.4/lib/src.zip!/java.desktop/javax/swing/JRootPane.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -905,36 +848,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/produtec/domain/entity/Monitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="55" column="32" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#667#668#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/produtec/domain/entity/Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="197" column="82" selection-start-line="197" selection-start-column="82" selection-end-line="197" selection-end-column="82" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2054#2055#0" expanded="true" />
-            <element signature="e#2084#2085#0" expanded="true" />
-            <element signature="e#2850#2851#0" expanded="true" />
-            <element signature="e#2929#2930#0" expanded="true" />
-            <element signature="e#3043#3044#0" expanded="true" />
-            <element signature="e#3087#3088#0" expanded="true" />
-            <element signature="e#4843#4844#0" expanded="true" />
-            <element signature="e#4915#4916#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11.0.4/lib/src.zip!/java.desktop/java/awt/TextField.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2091">
@@ -949,14 +862,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/produtec/Main.java">
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.4/lib/src.zip!/java.base/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="46" column="21" lean-forward="true" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+        <state relative-caret-position="-912">
+          <caret line="926" column="22" selection-start-line="926" selection-start-column="22" selection-end-line="926" selection-end-column="22" />
+          <folding>
+            <element signature="e#17047#17048#0" expanded="true" />
+            <element signature="e#17113#17114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/produtec/infrastructure/observer/Observable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/br/com/produtec/domain/entity/ServiceIntegrationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2710">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1440#4190#0" expanded="true" />
-            <element signature="e#4189#4190#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/produtec/domain/entity/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="117" column="11" selection-start-line="117" selection-start-column="11" selection-end-line="117" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2054#2055#0" expanded="true" />
+            <element signature="e#2084#2085#0" expanded="true" />
+            <element signature="e#4697#4698#0" expanded="true" />
+            <element signature="e#4805#4806#0" expanded="true" />
+            <element signature="e#4963#4964#0" expanded="true" />
+            <element signature="e#6942#6943#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/produtec/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/produtec/domain/entity/Monitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="68" column="42" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

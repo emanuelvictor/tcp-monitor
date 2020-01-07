@@ -3,6 +3,7 @@ package br.com.produtec.domain.entity;
 import br.com.produtec.infrastructure.observer.Observable;
 import br.com.produtec.infrastructure.observer.Observer;
 
+import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.net.SocketAddress;
@@ -40,6 +41,11 @@ public class Service implements Runnable, Observer {
     /**
      *
      */
+    private Boolean done;
+
+    /**
+     *
+     */
     private Observable observable;
 
     /**
@@ -61,7 +67,6 @@ public class Service implements Runnable, Observer {
      *
      */
     private Thread thread;
-
 
     /**
      * @param host
@@ -95,7 +100,51 @@ public class Service implements Runnable, Observer {
         this.initialDateTime = initialDateTime;
         this.finalDateTime = finalDateTime;
 
+        this.validateDateTimes();
+        this.validateTimeouts();
+
         thread = new Thread(this, host + ":" + port);
+    }
+
+    /**
+     * @param host
+     * @param port
+     * @param monitor
+     * @param pollingTimeout
+     * @param connectionTimeout
+     * @param initialDateTime
+     * @param finalDateTime
+     */
+    public Service(final String host, final int port, final Monitor monitor, final int pollingTimeout, final int connectionTimeout, final LocalDateTime initialDateTime, final LocalDateTime finalDateTime) {
+        this.port = port;
+        this.host = host;
+        this.observable = monitor;
+
+        this.pollingTimeout = pollingTimeout * 1000;
+        this.connectionTimeout = connectionTimeout * 1000;
+        this.initialDateTime = initialDateTime;
+        this.finalDateTime = finalDateTime;
+
+        this.validateDateTimes();
+        this.validateTimeouts();
+
+        thread = new Thread(this, host + ":" + port);
+    }
+
+    /**
+     *
+     */
+    public void validateDateTimes() {
+        if (this.finalDateTime != null && this.initialDateTime != null && this.finalDateTime.isBefore(this.initialDateTime))
+            throw new RuntimeException("Invalid dates");
+    }
+
+    /**
+     *
+     */
+    public void validateTimeouts() {
+        if (this.pollingTimeout < connectionTimeout)
+            throw new RuntimeException("The polling timeout must be greater than connection timeout");
     }
 
     /**
@@ -103,6 +152,21 @@ public class Service implements Runnable, Observer {
      */
     public void start() {
         thread.start();
+    }
+
+    /**
+     *
+     */
+    public void stop() throws IOException {
+        done = true;
+        connected = false;
+        if (connection != null) {
+            connection.close();
+            connection = null;
+        }
+        if (thread != null) {
+            thread.interrupt();
+        }
     }
 
     /**
@@ -137,6 +201,13 @@ public class Service implements Runnable, Observer {
     }
 
     /**
+     * @return
+     */
+    boolean isDone() {
+        return this.done != null && this.done;
+    }
+
+    /**
      * @param observable
      */
     @Override
@@ -158,7 +229,8 @@ public class Service implements Runnable, Observer {
      */
     public void run() {
         try {
-            while (true) { // mater while todo
+
+            while ((done == null || !done)) {
 
                 connect();
 
@@ -167,12 +239,17 @@ public class Service implements Runnable, Observer {
                     sendNotification(this);
                 }
 
+                final LocalDateTime now = LocalDateTime.now();
+
+                if (((initialDateTime == null) || now.isAfter(initialDateTime)) && (finalDateTime == null || finalDateTime.isAfter(now)))
+                    done = false;
+                else
+                    stop();
+
                 Thread.sleep(this.pollingTimeout);
             }
-        } catch (InterruptedException e) {
-            System.out.println(host + ":" + port + " Interrupted");
+        } catch (InterruptedException | IOException ignored) {
         }
-        System.out.println(host + ":" + port + " exiting.");
     }
 
     /**
