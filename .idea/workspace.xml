@@ -3,16 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a95da92c-d6f0-4a96-9969-23aca50c08ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/desafio-produtec/br/com/produtec/domain/entity/Monitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/desafio-produtec/br/com/produtec/domain/entity/Monitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/desafio-produtec/br/com/produtec/domain/entity/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/desafio-produtec/br/com/produtec/domain/entity/Service.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/produtec/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/produtec/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/produtec/domain/entity/Monitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/produtec/domain/entity/Monitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/produtec/domain/entity/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/produtec/domain/entity/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/produtec/infrastructure/observer/Observable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/produtec/infrastructure/observer/Observable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/produtec/infrastructure/observer/ObservableImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/produtec/infrastructure/observer/ObservableImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/produtec/infrastructure/observer/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/produtec/infrastructure/observer/Observer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/produtec/infrastructure/observer/ObserverImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/produtec/infrastructure/observer/ObserverImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/produtec/infrastructure/observer/ObserverObservableImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/produtec/infrastructure/observer/ObserverObservableImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,8 +52,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/br/com/produtec/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="52" column="64" selection-start-line="52" selection-start-column="64" selection-end-line="52" selection-end-column="64" />
+            <state relative-caret-position="238">
+              <caret line="46" column="21" lean-forward="true" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1440#4190#0" expanded="true" />
@@ -442,7 +433,7 @@
       <workItem from="1578206971908" duration="6091000" />
       <workItem from="1578246231076" duration="1768000" />
       <workItem from="1578250429164" duration="2187000" />
-      <workItem from="1578311976544" duration="31207000" />
+      <workItem from="1578311976544" duration="32766000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring tests">
       <created>1578174562077</created>
@@ -500,7 +491,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578355359344</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Refactoring tests">
+      <created>1578375024070</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1578375024070</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -536,7 +534,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65168000" />
+    <option name="totallyTimeSpent" value="66727000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -953,8 +951,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/produtec/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="52" column="64" selection-start-line="52" selection-start-column="64" selection-end-line="52" selection-end-column="64" />
+        <state relative-caret-position="238">
+          <caret line="46" column="21" lean-forward="true" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1440#4190#0" expanded="true" />

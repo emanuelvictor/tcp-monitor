@@ -72,12 +72,12 @@ public class Main {
                 jPanelPollingTimeout.setPreferredSize(new Dimension(200, 50));
                 jPanelPollingTimeout.add(new JLabel("Polling Timeout (in seconds)"));
 
-                final NumberFormatter numberFormatterInitialDate = new NumberFormatter(longFormat);
-                numberFormatterInitialDate.setValueClass(Long.class);
-                numberFormatterInitialDate.setAllowsInvalid(false);
-                numberFormatterInitialDate.setMinimum(0L);
+                final NumberFormatter numberFormater = new NumberFormatter(longFormat);
+                numberFormater.setValueClass(Long.class);
+                numberFormater.setAllowsInvalid(false);
+                numberFormater.setMinimum(0L);
 
-                final JFormattedTextField textFieldPollingTimeout = new JFormattedTextField(numberFormatterInitialDate);
+                final JFormattedTextField textFieldPollingTimeout = new JFormattedTextField(numberFormater);
                 textFieldPollingTimeout.setPreferredSize(new Dimension(200, 20));
                 jPanelPollingTimeout.add(textFieldPollingTimeout);
                 textFieldPollingTimeout.setText("1");
@@ -87,15 +87,10 @@ public class Main {
                 jPanelConnectionTimeout.setPreferredSize(new Dimension(200, 50));
                 jPanelConnectionTimeout.add(new JLabel("Connection Timeout (in seconds)"));
 
-                final NumberFormatter numberFormatterFinalDate = new NumberFormatter(longFormat);
-                numberFormatterFinalDate.setValueClass(Long.class);
-                numberFormatterFinalDate.setAllowsInvalid(false);
-                numberFormatterFinalDate.setMinimum(0L);
-
-                final JFormattedTextField textFieldConnectionTimeout = new JFormattedTextField(numberFormatterInitialDate);
+                final JFormattedTextField textFieldConnectionTimeout = new JFormattedTextField(numberFormater);
                 textFieldConnectionTimeout.setPreferredSize(new Dimension(200, 20));
                 jPanelConnectionTimeout.add(textFieldConnectionTimeout);
-                textFieldConnectionTimeout.setText("1");
+                textFieldPollingTimeout.setText("1");
 
                 final JFrame jFrame = new JFrame();
                 jFrame.setTitle("Insert service");
