@@ -7,6 +7,7 @@ import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.net.SocketAddress;
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 
 public class Service implements Runnable, Observer {
@@ -144,10 +145,10 @@ public class Service implements Runnable, Observer {
     }
 
     /**
-     * @param notification
+     *
      */
     @Override
-    public void sendNotification(final String notification) {
+    public void sendNotification(final Observer notification) {
         if (this.observable != null)
             this.observable.receiveNotification(notification);
     }
@@ -163,7 +164,7 @@ public class Service implements Runnable, Observer {
 
                 if (connected == null || connected != isConnected()) {
                     connected = isConnected();
-                    sendNotification(connected ? host + ":" + port + " connected" : host + ":" + port + " not connected");
+                    sendNotification(this);
                 }
 
                 Thread.sleep(this.pollingTimeout);
@@ -174,4 +175,32 @@ public class Service implements Runnable, Observer {
         System.out.println(host + ":" + port + " exiting.");
     }
 
+    /**
+     * --------------------------------------------------------------------------
+     * Hashcode and Equals
+     * --------------------------------------------------------------------------
+     */
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Service service = (Service) o;
+        return connectionTimeout == service.connectionTimeout &&
+                pollingTimeout == service.pollingTimeout &&
+                port == service.port &&
+                initialDateTime.equals(service.initialDateTime) &&
+                finalDateTime.equals(service.finalDateTime) &&
+                host.equals(service.host);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(initialDateTime, finalDateTime, connectionTimeout, pollingTimeout, port, host);
+    }
+
+
+    @Override
+    public String toString() {
+        return host + ":" + port + (connected ? " up" : " down");
+    }
 }

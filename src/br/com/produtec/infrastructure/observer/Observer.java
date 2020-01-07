@@ -4,5 +4,5 @@ public interface Observer {
 
     void mustNotify(final Observable observable);
 
-    void sendNotification(final String notification);
+    void sendNotification(final Observer message);
 }

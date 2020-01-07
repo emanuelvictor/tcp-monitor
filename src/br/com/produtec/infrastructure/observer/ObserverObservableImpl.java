@@ -5,18 +5,18 @@ public class ObserverObservableImpl extends ObservableImpl implements Observer {
     Observable observable;
 
     @Override
-    public void sendNotification(String notification) {
+    public void sendNotification(final Observer notification) {
         observable.receiveNotification(notification);
     }
 
     @Override
-    public void mustNotify(Observable observable) {
+    public void mustNotify(final Observable observable) {
         this.observable = observable;
     }
 
     @Override
     public void lerAviso() {
         super.lerAviso();
-        this.sendNotification(aviso);
+        this.sendNotification(notification);
     }
 }

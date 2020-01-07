@@ -5,7 +5,7 @@ public class ObserverImpl implements Observer {
     Observable observable;
 
     @Override
-    public void sendNotification(String notification) {
+    public void sendNotification(Observer notification) {
         observable.receiveNotification(notification);
     }
 
