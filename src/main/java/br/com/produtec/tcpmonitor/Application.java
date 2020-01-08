@@ -1,12 +1,13 @@
-package br.com.produtec;
+package br.com.produtec.tcpmonitor;
 
-import br.com.produtec.domain.entity.Monitor;
-import br.com.produtec.domain.entity.Service;
-import br.com.produtec.infrastructure.utils.Server;
+import br.com.produtec.tcpmonitor.domain.entity.Monitor;
+import br.com.produtec.tcpmonitor.domain.entity.Service;
+import br.com.produtec.tcpmonitor.infrastructure.utils.Server;
 
 import java.time.LocalDateTime;
 
-public class Main {
+public class Application {
+
     public static void main(final String[] args) {
 
         final Monitor monitor = new Monitor("Monitor 1");
@@ -41,4 +42,5 @@ public class Main {
         final Service service10 = new Service("151.101.65.195", 443, monitor3, 30, 30, LocalDateTime.now(), LocalDateTime.now().plusMinutes(2));
         service10.start();
     }
+
 }

@@ -1,6 +1,6 @@
-package br.com.produtec.domain.entity;
+package br.com.produtec.tcpmonitor.domain.entity;
 
-import br.com.produtec.infrastructure.utils.Server;
+import br.com.produtec.tcpmonitor.infrastructure.utils.Server;
 import org.junit.*;
 import org.junit.runners.MethodSorters;
 

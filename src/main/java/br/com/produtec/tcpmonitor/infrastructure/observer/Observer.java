@@ -1,4 +1,4 @@
-package br.com.produtec.infrastructure.observer;
+package br.com.produtec.tcpmonitor.infrastructure.observer;
 
 public interface Observer {
 

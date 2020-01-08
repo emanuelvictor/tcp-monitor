@@ -1,7 +1,8 @@
-package br.com.produtec.domain.entity;
+package br.com.produtec.tcpmonitor.domain.entity;
 
-import br.com.produtec.infrastructure.observer.Observable;
-import br.com.produtec.infrastructure.observer.Observer;
+
+import br.com.produtec.tcpmonitor.infrastructure.observer.Observable;
+import br.com.produtec.tcpmonitor.infrastructure.observer.Observer;
 
 import javax.swing.*;
 import java.awt.*;

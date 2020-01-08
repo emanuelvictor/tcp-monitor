@@ -1,11 +1,14 @@
-package br.com.produtec.infrastructure.utils;
+package br.com.produtec.tcpmonitor.infrastructure.utils;
 
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
 
-
+/**
+ * Little server to the tests.
+ * That stops shortly after receives the first connection.
+ */
 public class Server {
 
     /**
