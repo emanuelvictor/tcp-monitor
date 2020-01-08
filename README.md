@@ -11,3 +11,7 @@ Execute, via command line, the following instructions:
 
 - Executing tests: mvn clean package 
 - Executing application: java -jar target\tcp-monitor-0.0.1-SNAPSHOT.jar
+
+# Tests and Running
+
+To monitoring others services, change the class file br.com.produtec.tcpmonitor.Application.class as needed.
