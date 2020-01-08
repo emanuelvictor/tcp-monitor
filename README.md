@@ -1,9 +1,9 @@
-# Environment
+# Environment requirements
 
-Requirements:
+Must be installed and configured in path:
 
 - Java 11
-- Maven
+- Maven (only to execute tests)
 
 # Tests and Running
 
