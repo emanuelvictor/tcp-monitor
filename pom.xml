@@ -6,7 +6,7 @@
     <artifactId>tcp-monitor</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>tcp-monitor</name>
-    <description>Demo project for monitorion tcp/ip connections</description>
+    <description>Demo project for monitoring tcp/ip connections</description>
 
     <properties>
         <java.version>11</java.version>
