@@ -16,7 +16,7 @@
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
 
         <maven-jar-plugin.version>3.1.0</maven-jar-plugin.version>
 
